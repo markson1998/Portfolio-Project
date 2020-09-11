@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="icon" href="/static/img/emblem.png">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Markson</title>
+</head>
+<body>
+
+  <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark top">
+        <a class="navbar-brand" href="#">
+          <img src="/static/img/logo.png" id="logo" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      <!-- Collapse Menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#project">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Banner -->
+      <div id="banner">
+        <div class="container">
+          <h1>Hi I'm Markson</h1>
+          <p id="p-banner">A Passionate Software Development Student</p>
+          <div class="text-center">
+            <a href="#project"class="btn" href="#project"> View Projects</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Content -->
+      <div id="about-wrapper">
+        <div class="container text-center" id="about">
+          <div class="about-content">
+            <br>
+            <h2>About Me</h2>
+            <br>
+            <p>I'm Markson Leite a Software Development student that's passionate about developing software and web applications. These are some of the technolgies that I have used</p>
+            <img src="/static/img/newhtml.png" alt="hmtl-css-js" class="language1">
+            <br>
+            <img src="/static/img/node-mongo.png" alt="mongodb-node" class="language1">
+        </div>
+        </div>
+      </div>
+
+      <!-- Projects Content -->
+      <div id="projects">
+        <div class="container text-center">
+          <h2 id="project">Projects</h2>
+          <br>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <div class="card">
+                  <img src="/static/img/code-project.jpg" class="card-img-top" alt="Portfolio">
+                  <div class="card-body">
+                    <h5 class="card-title">Portfolio Project</h5>
+                    <p class="card-text">Portfolio Website build using HTML, CSS, Bootstrap, Javascript, NodeJS, Jquery, Express and MailGun <br><br></p>
+                    <a href="https://github.com/markson1998?tab=repositories" class="btn">View Source Code</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm">
+                <div class="card">
+                  <img src="/static/img/code3.jpg" class="card-img-top" alt="Ecommerce">
+                  <div class="card-body">
+                    <h5 class="card-title">Ecommerce Project</h5>
+                    <p class="card-text">Web Store with Content Management System, build using HTML,CSS, Bootstrap, Javascript, NodeJS and MongoDB</p>
+                    <a href="https://github.com/markson1998/Shopping-Application"  target="_blank"class="btn">View Source Code</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm">
+                <div class="card">
+                  <img src="/static/img/code.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Java GUI Project</h5>
+                    <p class="card-text">Soccer League Application GUI. Implementing Objects, Classes, Inheritance. Built in Java using JavaFX</p>
+                    <a href="https://github.com/markson1998/Soccer-League-Java-Project" target="_blank" class="btn">View Source Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="https://github.com/markson1998?tab=repositories" id ="more" target="_blank" class="btn">View More Projects</a>
+        </div>
+      </div>
+      <br>
+      <br>
+      <!-- Contact Content -->
+      <div class="contact">
+        <div class="container text-center" id="contact">
+          <div class="container" id="contact-form">
+            <h2 class="heading">Contact Me</h2>
+            <h2>I'd Love to Help!</h2>
+            <p>Feel free to say hello! Checkout My Linkedin Or Github</p>
+          <br><br>
+          <div class="row">
+          <div class="col-md-6">
+          <form method = "POST" id="myForm" onsubmit="return validateForm()">
+            <input type="email" name = "email" id="email" placeholder="Your Email"  class="form-control clear">
+            <br>
+            <input type="text" name="subject" id="subject" placeholder="Subject"  class="form-control clear">
+            <br>
+            <textarea rows="6" name ="text" id="text" placeholder="Message" class="form-control clear"></textarea>
+            <br>
+            <button class="btn btn-info" type="submit" value="Reset form" id="button-submit">Submit</button>
+            <br><br>
+            <button class="btn btn-info reset"type="button" onclick="resetForm();">Clear</button>
+            <br><br><br><br>
+          </form>
+          </div>
+          <div class="col-md-5">
+            <br>
+            <p class="icn"><i class="fa fa-map-marker"></i> &nbsp;&nbsp;Cork, Ireland </p>
+            <p class="icn"><i class="fa fa-envelope"></i> &nbsp;&nbsp; m.oliveira-leite@mycit.ie </p>
+            <hr>
+            <div class="container text-center"></div> 
+              <ul class="list-unstyled">
+                <li><a href="https://ie.linkedin.com/in/markson-william-leite-6501aa1b0?challengeId=AQGZHxLgxycUlwAAAXRqVhGvYlCgzL_Ou3stx3IEJl42IKMKmNSbchAcmKWv_ZQOdQqL8KNz6Lcke9kJ7KK3mxG-JhGEDxBFPQ&submissionId=5e8473c7-8f9b-3216-9e52-9c69c434c312" target="_blank"> <i class="fab fa-linkedin" id="link1"> </i></a></li>
+                <li><a href="https://github.com/markson1998?tab=repositories" target="_blank"> <i class="fab fa-github" id="link2"> </i></a></li>
+              </ul>
+            </div>
+            <br>
+            </div>
+          </div>
+      </div>
+      <!-- End Contact Content-->
+      
+      <!-- Footer-->
+      <div class="container text-center" id="footer">
+        <small>&copy; Copyright 2020,   Markson Development Corporation. All Rights Reserverd</small>
+      </div>
+      <!-- End Footer-->
+
+      <!-- Javascript -->
+      <script>
+
+        // Validating Form
+        function validateForm() {
+          var email = document.forms["myForm"]["email"].value;
+          var subject = document.forms["myForm"]["subject"].value;
+          var text = document.forms["myForm"]["text"].value;
+
+          if (email == "") {
+            alert("All Fields must be filled out!");
+          } 
+          else if (subject == "") {
+            alert("All Fields must be filled out!");
+          } 
+          else if (text == "") {
+            alert("All Fields must be filled out!");
+          }
+          else if ($('#email').val().length != 0){
+            // Email Sent Message
+          swal("Your email was sent!", "", "success");
+          }
+        };
+
+
+        // Grabbing user data from the form and sending to the server
+        $('form').on('submit', (e) =>{
+          e.preventDefault();
+
+
+          const email = $('#email').val().trim();
+          const subject = $('#subject').val().trim();
+          const text = $('#text').val().trim();
+
+          const data = {
+            email,
+            subject,
+            text
+          }
+
+          $.post('/email',data, function() {
+            console.log("Server received your data");
+          });
+        });
+
+
+        // Clear Button Function
+        function resetForm() {
+          document.getElementById("myForm").reset();     
+        };
+
+      
+      </script>
+</body>
+</html>

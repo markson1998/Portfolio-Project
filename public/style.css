@@ -1,0 +1,264 @@
+
+@font-face{
+    font-family: "FontOne";
+    src: url('/static/fonts/Orbitron-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: "FontTwo";
+    src: url('/static/fonts/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color:black;
+    font-family: 'FontOne', sans-serif;
+    color: white;
+}
+
+.bg-dark {
+    background-color: black!important;
+}
+
+li{
+    margin-right: 20px;
+}
+
+a {
+    font-size: 1.2em;
+}
+
+.navbar-brand{
+    font-size: 2em;
+}
+
+#logo{
+    width: 100px;
+    height: 100px;
+}
+
+div#banner{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 85vh;
+    background: url(img/bg.jpg);
+    background-size: cover;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+      
+.h1 {
+    flex: 0 1 auto;
+    align-self: auto;
+    text-align: center; 
+}
+
+.btn {
+    color: #fff;
+    background-color:#870900;
+    padding: 10px;
+    border-color:red;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn:hover{
+    background-color: #ad0c00;
+    border-color:red;
+    color: white;
+    transform: scale(1.05);
+}
+
+#about-wrapper{
+    background-color: #0c0c0c;
+}
+#projects{
+    margin-top:50px;
+    margin-bottom: 50px;
+    background-color: #000000;
+}
+#p-banner{
+    font-family: 'FontOne', sans-serif;
+}
+
+.language1{
+    width: 300px;
+    height: 250px;
+}
+p{
+    font-family: 'FontTwo', sans-serif;
+    font-size: 18px;
+}
+
+.card-body{
+
+    background-color: #050505;
+}
+
+.card{
+    margin-bottom: 30px;
+    background-color: red;
+}
+
+/*Contact*/
+
+#contact .heading{
+	text-align: center;
+	font-size: 45px;
+	border-bottom: 2px dotted #fff;
+}
+
+.container#contact-form{
+    border-radius: 1%;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 3px 7px 15px #550a0a;
+	background-color: #0a0a0a;
+}
+.btn-info{
+	width: 80%;
+	letter-spacing: 2px;
+    background: transparent;
+    transition: all 0.5s ease-in-out;
+}
+.btn-info:hover{
+	transform: scale(1.05);
+}
+.icn{
+	font-family: 'FontTwo', sans-serif;
+	font-size: 17px;
+   
+}
+
+.list-unstyled li{
+    display: inline;
+}
+
+hr{
+	width: 80%;
+}
+
+#link1{
+    font-size: 80px;
+}
+#link2{
+    font-size: 80px;
+}
+
+ul li a{
+	color: white;
+	font-family: 'FontOne', sans-serif;
+	font-size: 22px;
+	margin-left: 23px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease-in-out;
+}
+ul li a:hover{
+	color: #999;
+}
+
+#more{
+    margin-top: 30px;
+}
+
+.reset {
+	letter-spacing: 2px;
+    background: transparent!important;
+    transition: all 0.5s ease-in-out;
+    width: 30%;
+}
+
+
+/* End Contact*/
+
+.swal-button {
+    color: #fff;
+    background-color:#870900;
+    border-color:red;
+    transition: all 0.5s ease-in-out;
+}
+
+.swal-button:not([disabled]):hover {
+    background-color: #ad0c00;
+}
+.swal-button:hover{
+    background-color: #ad0c00;
+    border-color:red;
+    color: white;
+    transform: scale(1.05);
+}
+
+
+/* Footer */
+
+#footer {
+    margin-top: 50px;
+}
+/* End Footer*/
+
+
+/*Media Queries*/
+
+@media (max-width: 990px) {
+    #navbarSupportedContent {
+        background-color: #050505!important;
+        border-radius: 2%;
+    }
+    .navbar-brand{
+        position: relative;
+        margin-bottom: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+          
+    .navbar .navbar-collapse {
+        text-align: center;
+     }
+
+    .btn-info{
+        width: 100%;
+        letter-spacing: 2px;
+        background: transparent;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .reset{
+        width: 50%;
+    }
+    
+}
+
+@media (min-width: 990px) {
+    .language1{
+        width: 600px;
+        height: 200px;
+     }
+
+     .top {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+}
